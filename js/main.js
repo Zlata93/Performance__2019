@@ -24623,7 +24623,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
 
-    waterContainer.innerHTML = 
+    waterContainer.innerHTML =
                 '<div class="card-heading">' +
                     '<div class="card-icon-wrap">' +
                         '<img class="card-icon" src="img/kettle.svg">' +
@@ -24638,18 +24638,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const arrowLeftScens = document.querySelector('.scenarios__paginator .paginator__arrow_left');
-const arrowRightScens = document.querySelector('.scenarios__paginator .paginator__arrow_right');
-const panelCountScens = document.querySelectorAll('.scenarios__panel').length;
-const pageCountScens = document.querySelectorAll('.scenarios__page').length;
-const scenarios = document.querySelector('.scenarios');
-const pagiantorScens = document.querySelector('.scenarios__paginator');
-let currentPage = 1;
+// const arrowLeftScens = document.querySelector('.scenarios__paginator .paginator__arrow_left');
+// const arrowRightScens = document.querySelector('.scenarios__paginator .paginator__arrow_right');
+// const panelCountScens = document.querySelectorAll('.scenarios__panel').length;
+// const pageCountScens = document.querySelectorAll('.scenarios__page').length;
+// const scenarios = document.querySelector('.scenarios');
+// const pagiantorScens = document.querySelector('.scenarios__paginator');
+// let currentPage = 1;
 
 
 
 
-const selectButton = document.querySelector('.filter__select-button');
+// const selectButton = document.querySelector('.filter__select-button');
 const selectButtonText = document.querySelector('.filter__select-button .button__text');
 const selectOptions = document.querySelectorAll('.filter__select-item');
 const popup = document.querySelector('.filter__select-popup');
@@ -24757,7 +24757,7 @@ document.addEventListener("DOMContentLoaded", function () {
             buttonsContainer.style.display = "none";
         }
     }, 500)
-   
+
 
     document.getElementsByClassName("header-menu__switcher")[0].addEventListener("click", function () {
         document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active")
