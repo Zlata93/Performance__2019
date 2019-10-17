@@ -1,5 +1,7 @@
 "use strict";
 
+require('../css/main.css');
+
 !function(t) {
     var e = window["pcodeJsonp6187"];
     window["pcodeJsonp6187"] = function(i, o, r) {
