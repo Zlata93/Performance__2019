@@ -51,19 +51,19 @@ module.exports = {
             //         options: {}
             //     }
             // },
-            // {
-            //     test: /\.svg$/,
-            //     use: [
-            //         {
-            //             loader: 'svg-sprite-loader',
-            //             options: {
-            //                 extract: true,
-            //                 // spriteFilename: 'sprite-[hash:6].svg'
-            //             }
-            //         },
-            //         'svgo-loader'
-            //     ]
-            // },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: 'svg-sprite-loader',
+                        options: {
+                            extract: true,
+                            // spriteFilename: 'sprite-[hash:6].svg'
+                        }
+                    },
+                    'svgo-loader'
+                ]
+            },
             // {
             //     test: /\.svg$/,
             //     use: [
