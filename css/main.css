@@ -224,7 +224,7 @@ h6 {
     font-size: 1rem
 }
 
-.purchase-list__item+.purchase-list__item {
+.purchase-list__item + .purchase-list__item {
     margin-top: 10px
 }
 
@@ -248,7 +248,8 @@ h6 {
     min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
-    background-clip: border-box
+    background-clip: border-box;
+    border-radius: 23px;
 }
 
 header {
@@ -660,7 +661,8 @@ footer {
 
 .card_size_s {
     grid-column: span 2;
-    grid-row: span 1
+    grid-row: span 1;
+    border-radius: 22px;
 }
 
 .card_size_m {
@@ -936,50 +938,56 @@ html {
     width: 60px
 }
 
-@media (max-width:1230px) {
+@media (max-width: 1230px) {
     .card_size_m {
         grid-column: span 4
     }
 }
 
-@media (max-width:1030px) {
+@media (max-width: 1030px) {
     .content {
         width: 75%
     }
+
     .card_size_m {
         grid-column: span 4
     }
+
     .content-heading {
         width: 668px
     }
 }
 
-@media (min-width:1371px) {
+@media (min-width: 1371px) {
     .content-heading {
         text-align: center;
         font-size: 40px
     }
 }
 
-@media (max-width:680px) {
+@media (max-width: 680px) {
     .content {
         width: 335px;
         grid-template-columns: repeat(6, 1fr)
     }
+
     .content-heading {
         font-size: 24px;
         height: 64px;
         line-height: 64px;
         width: 330px
     }
+
     header {
         height: 67px;
         padding: 0 20px;
         border-bottom: 0
     }
+
     .header-logo {
         margin: 21px 52px 0 0
     }
+
     .header-menu {
         display: block;
         position: absolute;
@@ -993,102 +1001,129 @@ html {
         overflow: hidden;
         transition: all .5s ease
     }
+
     .header-menu_active {
         width: 250px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3)
     }
+
     .header-menu__link {
         padding: 20px 20px 20px 0;
         width: 100%
     }
+
     .header-menu__switcher {
         float: right;
         margin-top: 27px;
         cursor: pointer;
         display: block
     }
+
     .card {
         overflow: hidden;
         padding: 0 17px 20px 17px
     }
+
     .card_size_l {
         grid-column: span 6
     }
+
     .card_size_m {
         grid-column: span 6
     }
+
     .card_size_s {
         grid-column: span 6
     }
+
     .card-icon-wrap {
         width: 35px
     }
+
     .card-icon {
         width: 35px
     }
+
     .card-title {
         font-size: 14px;
         padding-left: 16px;
         line-height: 16px
     }
+
     .card-heading {
         padding: 0;
         height: 60px
     }
+
     .card-source {
         font-size: 12px
     }
+
     .card-time {
         font-size: 12px
     }
+
     .card-description {
         font-size: 18px;
         line-height: 22px;
         padding: 14px 0 0 0
     }
+
     .card-description_big {
         font-size: 18px;
         line-height: 22px;
         padding: 14px 0 0 0
     }
+
     .card-data_graph {
         padding-top: 39px
     }
+
     .card-time_block {
         float: right
     }
+
     .card-specs {
         margin-bottom: -9px
     }
+
     .card-data_climat {
         font-size: 14px;
         padding-top: 14px;
         margin-bottom: -17px
     }
+
     .hum-block {
         padding-right: 0;
         float: right
     }
+
     .critical {
         padding: 0
     }
+
     .heading-critical {
         padding: 0 17px;
         height: 69px
     }
+
     .specs-critical {
         padding: 0 17px 23px 17px
     }
+
     .description_critical {
         font-size: 18px;
         padding: 16px 17px
     }
+
     .song-area {
         margin-top: 13px
     }
+
     .cover-wrap {
         margin-left: 0
     }
+
     .song-title {
         width: 234px;
         font-size: 18px;
@@ -1096,108 +1131,123 @@ html {
         text-overflow: ellipsis;
         overflow: hidden
     }
+
     .song-data {
         padding-left: 15px
     }
+
     .song-range {
         width: 192px
     }
+
     .player-controls {
         margin: 0 -20px -10px -8px
     }
+
     .player-control_next {
         margin-left: 8px;
         margin-top: -10px
     }
+
     .volume-range {
         width: 117px
     }
+
     .buttons-wrap {
         padding-top: 14px
     }
+
     .button {
         height: 44px;
         float: right;
         margin-right: 0
     }
+
     .button_yellow {
         float: left
     }
+
     .critical-cam {
         height: 177px
     }
+
     .footer-menu {
         padding-left: 20px
     }
+
     .card-video {
         overflow: visible
     }
 }
 
-.owl-carousel .owl-wrapper:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0
-}
+/*.owl-carousel .owl-wrapper:after {*/
+/*    content: ".";*/
+/*    display: block;*/
+/*    clear: both;*/
+/*    visibility: hidden;*/
+/*    line-height: 0;*/
+/*    height: 0*/
+/*}*/
 
-.owl-carousel {
-    display: none;
-    position: relative;
-    width: 100%;
-    -ms-touch-action: pan-y
-}
+/*.owl-carousel {*/
+/*    display: none;*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    -ms-touch-action: pan-y*/
+/*}*/
 
-.owl-carousel .owl-wrapper {
-    display: none;
-    position: relative;
-    -webkit-transform: translate3d(0, 0, 0)
-}
+/*.owl-carousel .owl-wrapper {*/
+/*    display: none;*/
+/*    position: relative;*/
+/*    -webkit-transform: translate3d(0, 0, 0)*/
+/*}*/
 
-.owl-carousel .owl-wrapper-outer {
+/*.owl-carousel .owl-wrapper-outer {*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*    width: 100%*/
+/*}*/
+
+/*.owl-carousel .owl-wrapper-outer.autoHeight {*/
+/*    -webkit-transition: height .5s ease-in-out;*/
+/*    -moz-transition: height .5s ease-in-out;*/
+/*    -ms-transition: height .5s ease-in-out;*/
+/*    -o-transition: height .5s ease-in-out;*/
+/*    transition: height .5s ease-in-out*/
+/*}*/
+
+/*.owl-carousel .owl-item {*/
+/*    float: left*/
+/*}*/
+
+/*.owl-controls .owl-buttons div,*/
+/*.owl-controls .owl-page {*/
+/*    cursor: pointer*/
+/*}*/
+
+/*.owl-controls {*/
+/*    -webkit-user-select: none;*/
+/*    -khtml-user-select: none;*/
+/*    -moz-user-select: none;*/
+/*    -ms-user-select: none;*/
+/*    user-select: none;*/
+/*    -webkit-tap-highlight-color: transparent*/
+/*}*/
+
+/*.grabbing {*/
+/*    cursor: url(../img/grabbing.png) 8 8, move*/
+/*}*/
+
+/*.owl-carousel .owl-item,*/
+/*.owl-carousel .owl-wrapper {*/
+/*    -webkit-backface-visibility: hidden;*/
+/*    -moz-backface-visibility: hidden;*/
+/*    -ms-backface-visibility: hidden;*/
+/*    -webkit-transform: translate3d(0, 0, 0);*/
+/*    -moz-transform: translate3d(0, 0, 0);*/
+/*    -ms-transform: translate3d(0, 0, 0)*/
+/*}*/
+
+.carousel-element {
     overflow: hidden;
-    position: relative;
-    width: 100%
-}
-
-.owl-carousel .owl-wrapper-outer.autoHeight {
-    -webkit-transition: height .5s ease-in-out;
-    -moz-transition: height .5s ease-in-out;
-    -ms-transition: height .5s ease-in-out;
-    -o-transition: height .5s ease-in-out;
-    transition: height .5s ease-in-out
-}
-
-.owl-carousel .owl-item {
-    float: left
-}
-
-.owl-controls .owl-buttons div,
-.owl-controls .owl-page {
-    cursor: pointer
-}
-
-.owl-controls {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent
-}
-
-.grabbing {
-    cursor: url(../img/grabbing.png) 8 8, move
-}
-
-.owl-carousel .owl-item,
-.owl-carousel .owl-wrapper {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0)
 }

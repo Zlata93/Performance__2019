@@ -19,13 +19,13 @@ let currentPageDevs = 1;
 
 // pagiantorDevs.classList.toggle('paginator_hide', panelCountDevs < 7);
 
-$('.card').each(function(e) {
-    if ($(this).hasClass('card_size_s')) {
-        $(this).css({'border-radius': '22px'})
-    } else {
-        $(this).css({'border-radius': '54px'})
-    }
-});
+// $('.card').each(function(e) {
+//     if ($(this).hasClass('card_size_s')) {
+//         $(this).css({'border-radius': '22px'})
+//     } else {
+//         $(this).css({'border-radius': '54px'})
+//     }
+// });
 
 
 let curValue;
@@ -178,13 +178,13 @@ document.querySelectorAll('.panel_floor').forEach(p => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    $('.card').each(function(e) {
-        if ($(this).hasClass('card_size_s')) {
-            $(this).css({'border-radius': '22px'})
-        } else {
-            $(this).css({'border-radius': '23px'})
-        }
-    });
+    // $('.card').each(function(e) {
+    //     if ($(this).hasClass('card_size_s')) {
+    //         $(this).css({'border-radius': '22px'})
+    //     } else {
+    //         $(this).css({'border-radius': '23px'})
+    //     }
+    // });
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
 
     waterContainer.innerHTML =
@@ -256,12 +256,12 @@ var storage, initCriticalCam = function () {
     }), document.addEventListener("pointerup", e), g.addEventListener("onpointerup", e)
 };
 
-$(document).ready(function(){
-
-    var carousel = $("#carousel");
-
-    carousel.owlCarousel();
-});
+// $(document).ready(function(){
+//
+//     var carousel = $("#carousel");
+//
+//     carousel.owlCarousel();
+// });
 
 
 
