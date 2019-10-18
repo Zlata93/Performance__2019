@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
@@ -94,6 +95,15 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'main.css'
         }),
-        new SpriteLoaderPlugin(),
-    ]
+        // new SpriteLoaderPlugin(),
+        new HtmlWebpackPlugin({
+            template: 'index.html',
+            inject: true,
+        })
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, 'build'),
+        compress: true,
+        port: 9000
+    }
 };
