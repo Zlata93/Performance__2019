@@ -260,7 +260,7 @@ $(document).ready(function(){
 
     var carousel = $("#carousel");
 
-    carousel.owlCarousel();
+    carousel && carousel.owlCarousel();
 });
 
 
