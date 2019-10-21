@@ -96,10 +96,10 @@ module.exports = {
             filename: 'main.css'
         }),
         // new SpriteLoaderPlugin(),
-        // new HtmlWebpackPlugin({
-        //     template: 'index.html',
-        //     inject: true,
-        // })
+        new HtmlWebpackPlugin({
+            template: 'index.html',
+            inject: true,
+        })
     ],
     devServer: {
         contentBase: path.join(__dirname, 'build'),
