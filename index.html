@@ -215,15 +215,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
                 </div>
                 <p class="card-description card-description_big description_critical">Кажется, в холодильнике заканчивается молоко. Вы хотите добавить его в список покупок?</p>
 
-                <div class="buttons-wrap">
-                    <button class="button  button_yellow">
-                        Дa
-                    </button>
-
-                    <button class="button">
-                        Heт
-                    </button>
-                </div>
+                <div class="buttons-wrap"><button class="button button_yellow" type="button">Да</button><button class="button">Нет</button></div>
 
             </div>
 
@@ -286,14 +278,14 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         <a class="footer-menu__link" href="./assets/license.pdf" target="blank">Лицензия</a>
     </menu>
 </footer>
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        const buttonsContainer = document.querySelector('.buttons-wrap');
+<!--<script>-->
+<!--    window.addEventListener('DOMContentLoaded', () => {-->
+<!--        const buttonsContainer = document.querySelector('.buttons-wrap');-->
 
-        buttonsContainer.innerHTML = '<button class="button button_yellow" type="button">Да</button>' +
-            '<button class="button">Нет</button>';
-    });
-</script>
+<!--        buttonsContainer.innerHTML = '<button class="button button_yellow" type="button">Да</button>' +-->
+<!--            '<button class="button">Нет</button>';-->
+<!--    });-->
+<!--</script>-->
 <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 <script src="https://yastatic.net/jquery/3.3.1/jquery.js"></script>
 <script src="./build/script.js"></script>
