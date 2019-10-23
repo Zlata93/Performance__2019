@@ -2,8 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
@@ -44,43 +43,7 @@ module.exports = {
                 options: {
                     limit: 30000
                 }
-            },
-            // {
-            //     test: /\.svg/,
-            //     use: {
-            //         loader: 'svg-url-loader',
-            //         options: {}
-            //     }
-            // },
-            // {
-            //     test: /\.svg$/,
-            //     use: [
-            //         {
-            //             loader: 'svg-sprite-loader',
-            //             options: {
-            //                 extract: true,
-            //                 // spriteFilename: 'sprite-[hash:6].svg'
-            //             }
-            //         },
-            //         'svgo-loader'
-            //     ]
-            // },
-            // {
-            //     test: /\.svg$/,
-            //     use: [
-            //         {loader: 'file-loader'},
-            //         {
-            //             loader: 'svgo-loader',
-            //             options: {
-            //                 plugins: [
-            //                     {removeTitle: true},
-            //                     {convertColors: {shorthex: false}},
-            //                     {convertPathData: false}
-            //                 ]
-            //             }
-            //         }
-            //     ]
-            // },
+            }
         ]
     },
 
@@ -95,11 +58,10 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'main.css'
         }),
-        // new SpriteLoaderPlugin(),
-        new HtmlWebpackPlugin({
-            template: 'index.html',
-            inject: true,
-        })
+        // new HtmlWebpackPlugin({
+        //     template: 'index.html',
+        //     inject: true,
+        // })
     ],
     devServer: {
         contentBase: path.join(__dirname, 'build'),
